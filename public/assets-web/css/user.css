@@ -1,0 +1,225 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background: #fdfdfd;
+    color: #fdfdfd;
+}
+
+/*------------ Login container ------------*/
+
+/* .square {
+    position: absolute;
+    height: 400px;
+    top: 50%;
+    left: 55%;
+    transform: translate(181%, 11%);
+    opacity: 0.2;
+} */
+.box-area{
+    width: 850px;
+    height: 500px;
+    display: flex;
+    position: relative;
+}
+
+.box-area:before {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background-color: #119D94;
+  transform: rotate(45deg);
+  top: 35px;
+  left: 49%;
+}
+
+/*------------ left box ------------*/
+.left-box{
+  /* padding: 20px 30px 40px 10px; */
+  position: relative;
+}
+
+
+/*------------ right box ------------*/
+.right-box{
+  padding: 65px 30px 40px 40px;
+  background-color: #119D94;
+  position: relative;
+  border-radius: 10px;
+}
+
+
+.input-container {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.input {
+  width: 100%;
+  outline: none;
+  border: 2px solid #fafafa;
+  background: none;
+  padding: 0.6rem 1.2rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+textarea.input {
+  padding: 0.8rem 1.2rem;
+  min-height: 150px;
+  border-radius: 22px;
+  resize: none;
+  overflow-y: auto;
+}
+
+.input-container label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  padding: 0 0.4rem;
+  color: #fafafa;
+  font-size: 0.9rem;
+  font-weight: 400;
+  pointer-events: none;
+  z-index: 1000;
+  transition: 0.5s;
+}
+
+.input-container.textarea label {
+  top: 1rem;
+  transform: translateY(0);
+}
+
+
+.title{
+  margin-left: 60px;
+  color: #2ED5A1;
+  margin-top: 10px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.title1 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-top: 20px;
+  margin-bottom: 0.7rem;
+}
+
+.title2 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1;
+    margin-top: 20px;
+    margin-bottom: 0.7rem;
+  }
+  
+  .btn-login {
+    padding: 0.6rem 1.3rem;
+    background-color: rgb(83, 77, 77);
+    border: 1px solid #fff;
+    font-size: 0.95rem;
+    color: white;
+    line-height: 1;
+    border-radius: 25px;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+  }
+  
+  .btn-login:hover {
+    background-color: #fff;
+    color: black;
+  }
+
+  .btn-login2 {
+    padding: 0.6rem 1.3rem;
+    background-color: rgb(83, 77, 77);
+    border: 2px solid #fafafa;
+    font-size: 0.95rem;
+    color: white;
+    line-height: 1;
+    border-radius: 25px;
+    width: 40%;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 8px;
+  }
+  
+  .btn-login2:hover {
+    background-color: white;
+    color: black;
+  }
+
+.circle {
+    border-radius: 50%;
+    background: linear-gradient(135deg, transparent 20%, #434d4c);
+    position: absolute;
+  }
+  
+  .circle.one {
+    width: 130px;
+    height: 130px;
+    top: 130px;
+    right: 1px;
+  }
+  
+  .circle.two {
+    width: 80px;
+    height: 80px;
+    top: 10px;
+    right: 30px;
+  }
+
+
+/*------------ inpus text ------------*/
+
+.form-control {
+    border: 2px solid #fafafa;
+    /* letter-spacing: 0.5px; */
+    border-radius: 25px;
+  }
+
+::placeholder{
+    font-size: 16px;
+}
+
+.rounded-4{
+    border-radius: 20px;
+}
+.rounded-5{
+    border-radius: 30px;
+}
+
+
+/*------------ For small screens------------*/
+
+@media only screen and (max-width: 768px){
+
+     .box-area{
+        margin: 0 10px;
+
+     }
+     .left-box{
+        height: 100px;
+        overflow: hidden;
+     }
+     .right-box{
+        padding: 20px;
+     }
+
+     /* .square{
+        display: none;
+     } */
+
+}
